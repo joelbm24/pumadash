@@ -1,22 +1,21 @@
 <!doctype html>
 <html>
     <head>
-        <title>Puma Dashboard: Instances</title>
+        <title>Puma Dashboard: Images</title>
     </head>
     <body>
         <table>
-        {% for inst in p.get_instance_list() %}
+        {% for img in p.get_image_list() %}
+            {% if img.id.find("ami") == 0 %}
                 <tr>
                     <td>
-                        {{inst.id}}
+                        {{img.id}}
                     </td>
                     <td>
-                        {{inst.image_id}}
-                    </td>
-                    <td>
-                        {{inst.instance_type}}
+                        {{img.displayName}}
                     </td>
                 </tr>
+            {% endif %}
         {% endfor %}
         </table>
     </body>
