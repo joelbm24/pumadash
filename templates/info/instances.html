@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Puma Dashboard: Instances</title>
+    </head>
+    <body>
+        <table>
+        {% for inst in p.get_instance_list() %}
+                <tr>
+                    <td>
+                        {{inst.id}}
+                    </td>
+                    <td>
+                        {{inst.image_id}}
+                    </td>
+                    <td>
+                        {{inst.instance_type}}
+                    </td>
+                </tr>
+        {% endfor %}
+        </table>
+    </body>
+</html>
+

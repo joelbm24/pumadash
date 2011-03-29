@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Puma Dashboard: Images</title>
+    </head>
+    <body>
+        <table>
+        {% for img in p.get_image_list() %}
+            {% if img.id.find("ami") == 0 %}
+                <tr>
+                    <td>
+                        {{img.id}}
+                    </td>
+                    <td>
+                        {{img.displayName}}
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+        </table>
+    </body>
+</html>
+

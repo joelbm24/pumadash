@@ -24,10 +24,10 @@ def index():
 def info(opt=None):
     if opt == None:
         # add template
-        return "info page"
+        return render_template("/info.html")
 
     try:
-        return render_template(opt+'.html', p=p)
+        return render_template("/info/"+opt+'.html', p=p)
     except:
         return "<h1>404: Page not found</h1>"
 
