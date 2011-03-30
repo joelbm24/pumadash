@@ -2,10 +2,28 @@
 <html>
     <head>
         <title>Puma Dashboard</title>
+        <link rel=stylesheet type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <script type=application/javascript" src="{{ url_for('static', filename='jquery-1.5.1.min.js') }}">
+            $("#clickhere").click(function() {
+                    $("#animate1").animate({
+                        height: "20px",
+                        width: "10px",
+                    }, 1000);
+        </script>
     </head>
     <body>
-        <h1>What would you like to view</h1>
-        <a href="/info">Info</a>
+        <h1>Puma Dashboard</h1>
+        <div class="container">
+            <div class="info" id="info-bar">
+                <a href="/info">Info</a>
+            </div>
+            <div class="account" id="account-bar">
+                <a href="">Account</a>
+            </div>
+            <div class="projects" id="projects-bar">
+                <a href="">Projects</a>
+            </div>
+        </div>
     </body>
 </html>
 

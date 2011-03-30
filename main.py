@@ -1,7 +1,8 @@
 import sys, os
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 error=False
+
 
 try:
     sys.path.append(os.environ["HOME"] + "/puma/lib")
@@ -29,6 +30,7 @@ def info(opt=None):
     try:
         return render_template("/info/"+opt+'.html', p=p)
     except:
+        #TODO make a dedicated error page
         return "<h1>404: Page not found</h1>"
 
 if __name__ == '__main__':
