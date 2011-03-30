@@ -10,19 +10,10 @@ a {text-decoration: none;}
     width: 80%;
 }
 
-.info {
+.menu {
     font-size:32px;
     text-align: center;
-}
-
-.account {
-    font-size:32px;
-    text-align: center;
-}
-
-.projects {
-    font-size:32px;
-    text-align: center;
+    margin: 0;
 }
 
 #info-bar {
@@ -53,4 +44,16 @@ a {text-decoration: none;}
     width: 100%;
     height: 145px;
     z-index: -1;
+}
+
+.container div {
+    width: 90%;
+    height: 125px;
+    background-color:white;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    border: solid 1px black;
+    display: none;
 }
