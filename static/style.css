@@ -59,9 +59,12 @@ a {text-decoration: none;}
     padding-left: 5px;
     border: solid 1px black;
     display: none;
-    overflow:auto;
 }
 
 #info-area {
+    width:75%;
+    float: right;
+    max-height: 180px;
+    overflow:auto;
     display: block;
 }
