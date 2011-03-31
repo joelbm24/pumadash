@@ -11,9 +11,11 @@ a {text-decoration: none;}
 }
 
 .menu {
+    font-family: Helvetica;
     font-size:32px;
     text-align: center;
     margin: 0;
+    color: #444;
     cursor: pointer;
 }
 
@@ -23,7 +25,7 @@ a {text-decoration: none;}
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff3300, endColorstr=#cd4f39);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff3300, endColorstr=#cd4f39)";
     width: 100%;
-    height: 145px;
+    height: 80px;
     z-index: -1;
 }
 
@@ -33,7 +35,7 @@ a {text-decoration: none;}
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#49e9bd, endColorstr=#3e766d);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#49e9bd, endColorstr=#3e766d)";
     width: 100%;
-    height: 145px;
+    height: 80px;
     z-index: -1;
 }
 
@@ -43,13 +45,13 @@ a {text-decoration: none;}
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33ff33, endColorstr=#008000);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33ff33, endColorstr=#008000)";
     width: 100%;
-    height: 145px;
+    height: 80px;
     z-index: -1;
 }
 
 .container div {
     width: 90%;
-    height: 125px;
+    min-height: 125px;
     background-color:white;
     margin: 0;
     margin-left: auto;
@@ -57,4 +59,8 @@ a {text-decoration: none;}
     padding-left: 5px;
     border: solid 1px black;
     display: none;
+}
+
+#info-area {
+    display: block;
 }

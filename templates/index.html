@@ -3,16 +3,7 @@
     <head>
         <title>Puma Dashboard</title>
         <script type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-
-                    $(".container h2").click(function(){
-                        $(this).next("div").slideToggle("fast")
-                        .siblings("div:visible").slideUp("fast");
-                        });
-
-                    });
-        </script>
+        <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
         <link rel=stylesheet type="text/css" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
@@ -20,7 +11,12 @@
         <div class="container">
             <h2 class="menu" id="info-bar">Info</h2>
             <div>
-                info instances, images, volumes, etc will go here.
+                <a href="#" onclick="displayInfo('instances')" >Instances</a>
+                <br />
+                <a href="#" onclick="displayInfo('images')">Images</a>
+
+                <span id='info-area'>
+                </span>
             </div>
 
             <h2 class="menu" id="account-bar">Account</h2>
