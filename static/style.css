@@ -62,9 +62,35 @@ a {text-decoration: none;}
 }
 
 #info-area {
-    width:75%;
+    width: 75%;
     float: right;
-    max-height: 180px;
-    overflow:auto;
-    display: block;
+    max-height: 200px;
+    overflow: auto;
+}
+
+#info-links {
+    width: 25%;
+    float:left;
+}
+
+#info-links ul {
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+
+#info-links li {
+    background-color: #79CDCD;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-top:5px;
+    text-align:center;
+    cursor:pointer;
+}
+
+#info-links li:hover {
+    background-color: #37FDFC;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor:pointer;
 }

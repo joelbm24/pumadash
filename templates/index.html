@@ -11,10 +11,14 @@
         <div class="container">
             <h2 class="menu" id="info-bar">Info</h2>
             <div id="panel">
-                <a href="#" onclick="displayInfo('instances')" >Instances</a>
-                <br />
-                <a href="#" onclick="displayInfo('images')">Images</a>
-
+                <span id="info-links">
+                    <ul>
+                        <li onclick="displayInfo('instances')">Instances</li>
+                        <li onclick="displayInfo('images')">Images</li>
+                        <li onclick="displayInfo('volumes')">Volumes</li>
+                        <li onclick="displayInfo('keys')">Keys</li>
+                    </ul>
+                </span>
                 <span id='info-area'>
                 </span>
             </div>

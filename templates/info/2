@@ -1,0 +1,15 @@
+<table>
+    {% for vol in p.get_volume_list() %}
+        <tr>
+            <td>
+                {{vol.id}}
+            </td>
+            <td>
+                {{vol.size}}GB
+            </td>
+            <td>
+                {{vol.status}}
+            </td>
+        </tr>
+    {% endfor %}
+</table>
