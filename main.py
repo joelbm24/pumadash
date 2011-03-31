@@ -24,8 +24,7 @@ def index():
 @app.route('/info/<opt>')
 def info(opt=None):
     if opt == None:
-        # add template
-        return render_template("/info.html")
+        return "ERROR: Need an option"
 
     try:
         return render_template("/info/"+opt+'.html', p=p)

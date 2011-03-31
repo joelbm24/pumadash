@@ -51,7 +51,7 @@ a {text-decoration: none;}
 
 .container div {
     width: 90%;
-    min-height: 125px;
+    height: 200px;
     background-color:white;
     margin: 0;
     margin-left: auto;
@@ -59,6 +59,7 @@ a {text-decoration: none;}
     padding-left: 5px;
     border: solid 1px black;
     display: none;
+    overflow:auto;
 }
 
 #info-area {
