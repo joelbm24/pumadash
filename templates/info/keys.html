@@ -1,0 +1,12 @@
+<table>
+    {% for key in p.get_keypairs() %}
+        <tr>
+            <td>
+                {{key.name}}
+            </td>
+            <td>
+                {{key.fingerprint}}
+            </td>
+        </tr>
+    {% endfor %}
+</table>
